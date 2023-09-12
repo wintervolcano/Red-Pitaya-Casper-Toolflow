@@ -68,3 +68,30 @@ not searchable when Model Composer and Simulink are load up. If you have any
 issues the process is reversed by placing the files in the `exclude/` directory 
 back into their previous locations.
 
+
+
+
+In case others are struggling with this problem...
+
+
+When running a simulation in my Ubuntu 20.04 system I got "Error: no such 
+## instruction: `endbr64'".
+
+I spent a lot of time on this including making links to /usr/include without 
+success. Then I tried
+
+        !gcc /tmp/hello.c
+
+/tmp/cc2Od0Ug.s: Assembler messages:
+/tmp/cc2Od0Ug.s:12: Error: no such instruction: `endbr64'
+
+        !which as
+
+/srv/data/opt/Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26/bin/as
+
+in the Matlab console. Aha! The problem is obvious because the version of the 
+system as is 2.34.
+
+In Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26 I
+mv bin bin.bak
+and compiling and simulating now works!
