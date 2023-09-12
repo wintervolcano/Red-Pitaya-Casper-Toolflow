@@ -30,3 +30,9 @@ Then Install the software normally
 sudo apt-get --reinstall install libc6 libc6-dev
 
 Fixed it!
+
+
+## build issues 
+
+https://bobbyhadz.com/blog/python-error-invalid-command-bdist-wheel
+
