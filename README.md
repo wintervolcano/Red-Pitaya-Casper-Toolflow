@@ -36,3 +36,35 @@ Fixed it!
 
 https://bobbyhadz.com/blog/python-error-invalid-command-bdist-wheel
 
+
+This issue is caused by  library dependency differences between what Ubuntu 
+base uses and what the Xilinx Model Composer and MATLAB Simulink are wanting to 
+use. Particularly the various libgmp libraries used.
+
+To side step this issue requires altering your Model Composer installation 
+directory. I have been successful in making these adjustments. But, altering 
+the installation may have other consequences and not generally recommended. 
+That being said I have not as of yet had any compatibility or seen any failures 
+result because of it.
+
+Assuming you have Xilinx installations at `/opt/Xilinx` (or change this path 
+for where your installation is)
+
+```
+cd /opt/Xilinx/Model_Composer/2021.1/lib/lnx64.o/Ubuntu
+mkdir exclude
+mv libgmp.so* exclude/
+
+cd /opt/Xilinx/Vivado/2021.1/lib/lnx64.o/Ubuntu
+mkdir exclude
+mv libgmp.so* exclude/
+
+cd /opt/Xilinx/Vivado/2021.1/lib/lnx64.o
+mkdir exclude
+mv libgmp.so* exclude/
+```
+The libgmp that match the wild card will be moved to the exclude directory and 
+not searchable when Model Composer and Simulink are load up. If you have any 
+issues the process is reversed by placing the files in the `exclude/` directory 
+back into their previous locations.
+
