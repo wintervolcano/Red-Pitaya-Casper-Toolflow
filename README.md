@@ -1,5 +1,7 @@
 # Vivado-Installation
 
+https://community.element14.com/technologies/fpga-group/b/blog/posts/installing-xilinx-vivado-on-ubuntu
+
 While installing Vivado by xilinx, the installer was getting stuck at the generating devices list... stage.
 
 To bypass this, we can do:
