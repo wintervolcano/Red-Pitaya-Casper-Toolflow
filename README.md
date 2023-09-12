@@ -104,3 +104,10 @@ and compiling and simulating now works!
 ## To update the license for Xilinx
 
 /tools/Xilinx/Vivado/2021.1/bin/vlm
+
+
+
+
+## Cannot write to register
+
+https://www.mail-archive.com/casper@lists.berkeley.edu/msg02503.html
