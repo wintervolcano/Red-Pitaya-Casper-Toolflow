@@ -97,3 +97,8 @@ cd  /tools/Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26 I
 mv bin bin.bak
 ```
 and compiling and simulating now works!
+
+
+## To update the license for Xilinx
+
+/tools/Xilinx/Vivado/2021.1/bin/vlm
