@@ -22,3 +22,11 @@ doUbuntu()
 }
 
 Then Install the software normally
+
+
+
+## progska error fix:
+
+sudo apt-get --reinstall install libc6 libc6-dev
+
+Fixed it!
