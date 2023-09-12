@@ -92,6 +92,8 @@ success. Then I tried
 in the Matlab console. Aha! The problem is obvious because the version of the 
 system as is 2.34.
 
-In Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26 I
+```
+cd  /tools/Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26 I
 mv bin bin.bak
+```
 and compiling and simulating now works!
