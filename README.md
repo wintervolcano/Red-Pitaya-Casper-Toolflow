@@ -111,3 +111,44 @@ and compiling and simulating now works!
 ## Cannot write to register
 
 https://www.mail-archive.com/casper@lists.berkeley.edu/msg02503.html
+
+
+
+####     Error evaluating 'OpenFcn' callback of Xilinx Adder/Subtracter Block block (mask) 'IIR_DirectForm_3pole_1/AddSub'. Callback string is 'xlOpenGui(gcbh, 'addsub_gui.xml', @addsubenablement, -1)' 
+#### Error using xlNMIProxy Timed out waiting for a response from GUI to: (2.0001) buildGUI DISPLAY ENV = ":0" timeout value = 180.0014
+
+
+This is a Qt4 package issue. 
+
+Double-clicking should open a block in a loaded SLX model.  No window opens, and after very long pause, a dialog appears with an error message, it reads
+Error evaluating 'OpenFcn' callback of Xilinx Type Reinterpreter Block block (mask) 'zcu216_tut_spec_cx/Reinterpret9'. Callback string is 'xlOpenGui(gcbh, 'reinterpret_gui.xml',@reinterpretenablement,-1)' .  Error using xlNMIProxy Timed out waiting for a response from GUI to: (74880.0001) buildGUI DISPLAY ENV =":0" timeout value = 180.0013
+
+This error is caused by sysgensockgui failing to load.  The non-loading is likely caused by missing dependencies.  One these are resolved, sysgensockgui should operate as intended. Missing dependencies can be checked the following way,
+````
+root@r*****a:/tools/Xilinx/Vivado/2021.1/bin# ldd unwrapped/lnx64.o/sysgensockgui 
+        linux-vdso.so.1 (0x00007ffedf51e000)
+        libQtCore.so.4 => not found
+        libQtGui.so.4 => not found
+        libQtNetwork.so.4 => not found
+        libQtXml.so.4 => not found
+        librdi_itlib.so => not found
+        libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fddc2160000)
+        libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fddc200f000)
+        libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fddc1ff4000)
+        libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fddc1e02000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007fddc2367000)
+
+
+````
+
+"sysgensockgui" needs the entire framework of Qt 4.8.x to run correctly. If you have Qt 4 install in your system, those should be taken care for you.
+
+The four libraries libQtCore.so.4, libQtGui.so.4, libQtNetwork.so.4, and libQtXml.so.4 is our version of the Qt 4 libraries. It will be overloaded when you launch the SysGen blocks within the Qt 4 framework.
+
+### Solution
+```
+sudo add-apt-repository ppa:rock-core/qt4
+sudo apt-get update
+sudo apt-get install libqtcore4
+sudo apt-get install libqtgui4
+```
