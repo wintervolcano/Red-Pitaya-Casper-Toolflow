@@ -1,0 +1,98 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2021.1                 /tools/Xilinx/Vivado/2021.1
+Matlab 9.10.0.2198249 (R2021a) Update 8 /usr/local/MATLAB/R2021a
+Vivado 2021.1                           /tools/Xilinx/Vivado/2021.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: /tmp/ccAVQ8Eb.s: Assembler messages:
+/tmp/ccAVQ8Eb.s:10: ...
+     Block: 'tut_adc_dac/adc_in_snap/buscreate/concatenate'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'tut_adc_dac/adc_in_snap/buscreate/concatenate'
+
+Details:
+/tmp/ccAVQ8Eb.s: Assembler messages:
+/tmp/ccAVQ8Eb.s:10: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:65: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:146: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:168: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:190: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:338: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:466: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:514: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1021: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1171: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1282: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1326: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1451: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1579: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1701: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1742: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1819: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1875: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1931: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:1987: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2036: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2064: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2092: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2126: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2180: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2230: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2280: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2429: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2642: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2728: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2860: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:2992: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3124: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3256: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3320: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3384: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3435: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3456: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3549: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:3790: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4056: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4164: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4212: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4255: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4308: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4385: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4495: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4546: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4612: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:4748: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5015: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5089: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5138: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5185: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5345: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5523: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5661: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5685: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5714: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5736: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5762: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5782: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5801: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5830: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5873: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5912: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5944: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5964: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:5984: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:6008: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:6039: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:6074: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:6161: Error: no such instruction: `endbr64'
+/tmp/ccAVQ8Eb.s:6188: Error: no such instruction: `endbr64'
+Program "/usr/bin/gcc" returned non-zero status (1).
+
+Error occurred during "Simulation Initialization".
+
+--------------------------------------------------------------------------------
